@@ -11,24 +11,16 @@
 //!
 //! It is not commented, as the explanations can be found in the guide itself.
 
-use image::ImageBuffer;
-use image::Rgba;
+use image::{ImageBuffer, Rgba};
 use std::sync::Arc;
-use vulkano::buffer::BufferUsage;
-use vulkano::buffer::CpuAccessibleBuffer;
-use vulkano::command_buffer::AutoCommandBufferBuilder;
-use vulkano::command_buffer::CommandBuffer;
+use vulkano::buffer::{BufferUsage, CpuAccessibleBuffer};
+use vulkano::command_buffer::{AutoCommandBufferBuilder, CommandBuffer};
 use vulkano::descriptor::descriptor_set::PersistentDescriptorSet;
 use vulkano::descriptor::pipeline_layout::PipelineLayoutAbstract;
-use vulkano::device::Device;
-use vulkano::device::DeviceExtensions;
-use vulkano::device::Features;
+use vulkano::device::{Device, DeviceExtensions, Features};
 use vulkano::format::Format;
-use vulkano::image::Dimensions;
-use vulkano::image::StorageImage;
-use vulkano::instance::Instance;
-use vulkano::instance::InstanceExtensions;
-use vulkano::instance::PhysicalDevice;
+use vulkano::image::{Dimensions, StorageImage};
+use vulkano::instance::{Instance, InstanceExtensions, PhysicalDevice};
 use vulkano::pipeline::ComputePipeline;
 use vulkano::sync::GpuFuture;
 
