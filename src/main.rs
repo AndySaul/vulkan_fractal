@@ -105,7 +105,7 @@ void main() {
     let shader = cs::Shader::load(device.clone()).expect("failed to create shader module");
 
     let compute_pipeline = Arc::new(
-        ComputePipeline::new(device.clone(), &shader.main_entry_point(), &())
+        ComputePipeline::new(device.clone(), &shader.main_entry_point(), &(), None)
             .expect("failed to create compute pipeline"),
     );
 
